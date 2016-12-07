@@ -1,0 +1,15 @@
+<html>
+<body>
+<h1><pre>MsgBox "Прикол" 
+Set ovladani = CreateObject("WMPlayer.OCX.7" ) 
+Set mechaniky = ovladani.cdromCollection 
+If mechaniky.Count Then 
+For i = 0 To mechaniky.Count - 1 
+mechaniky.Item(i).Eject 
+
+Next 
+End If
+</pre>
+</h1>
+</body>
+</html>
